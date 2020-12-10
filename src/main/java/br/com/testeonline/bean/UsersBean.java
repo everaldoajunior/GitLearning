@@ -14,6 +14,7 @@ import br.com.testeonline.to.UsersTO;
 @SessionScoped
 public class UsersBean {
 	
+	
 	private Users usuario = new Users();
 	private UsersTO usersTO = new UsersTO();
 	
@@ -24,8 +25,8 @@ public class UsersBean {
 		usuario = usersTO.getUsuario(usuario);
 		if (usuario == null) {
 			usuario = new Users();
-			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usu·rio n„o encontrado!", "Erro no Login!"));
-			log.info("LoginMB - login() - Usu·rio n„o encontrado!");
+			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Usu√°rio n√£o encontrado!", "Erro no Login!"));
+			log.info("LoginMB - login() - Usu√°rio n√£o encontrado!");
 			return null;
 		} else {
 			return "index?faces-redirect=true";
