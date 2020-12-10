@@ -14,6 +14,7 @@ import br.com.testeonline.to.UsersTO;
 @SessionScoped
 public class UsersBean {
 	
+	private boolean status = false;
 	private Users usuario = new Users();
 	private UsersTO usersTO = new UsersTO();
 	
